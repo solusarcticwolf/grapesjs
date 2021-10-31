@@ -1,0 +1,30 @@
+{
+    "name": "grapesjs-project-manager",
+    "version": "1.0.12",
+    "description": "Grapesjs Project Manager",
+    "main": "dist/grapesjs-project-manager.min.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Ju99ernaut/grapesjs-template-manager.git"
+    },
+    "scripts": {
+        "start": "grapesjs-cli serve",
+        "build": "grapesjs-cli build",
+        "build:css": "sass src/styles.scss dist/grapesjs-project-manager.min.css --style compressed",
+        "watch:scss": "sass --watch src/styles.scss dist/grapesjs-project-manager.min.css --style compressed",
+        "bump": "npm version patch -m 'Bump v%s'"
+    },
+    "keywords": [
+        "grapesjs",
+        "plugin"
+    ],
+    "devDependencies": {
+        "grapesjs-cli": "^1.0.14",
+        "sass": "^1.32.8"
+    },
+    "author": "Brendon Ngirazi",
+    "license": "MIT",
+    "dependencies": {
+        "dom-to-image": "^2.6.0"
+    }
+}
